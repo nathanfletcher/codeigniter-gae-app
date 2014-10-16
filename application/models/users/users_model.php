@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Admins_Model extends Base_User_Model {
+class Users_Model extends Base_User_Model {
 
-    protected $table = "admins";
+    protected $table = 'users';
 
     public function __construct() {
         parent::__construct();
