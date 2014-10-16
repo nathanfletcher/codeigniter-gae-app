@@ -13,6 +13,10 @@ handlers:
   static_files: user_guide/\1
   upload: user_guide/(.*)
 
+- url: /static/(.*)
+  static_files: static/\1
+  upload: static/(.*)
+
 - url: /
   script: index.php
 
