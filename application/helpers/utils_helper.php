@@ -1,7 +1,46 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-if(! function_exists('getCaptcha')) {
-    function getCaptcha() {
+
+if (!function_exists('getFileMime')) {
+    function getFileMime($file)
+    {
+        if (PHP_VERSION >= '5.3.0') {
+            $file_info = new finfo(FILEINFO_MIME_TYPE);
+            return $file_info->file($file);
+        } else {
+            return mime_content_type($file);
+        }
+    }
+}
+
+if (!function_exists('isValidImageExtension')) {
+    function isValidImageExtension($file, $extensions)
+    {
+        $image_mimes = array(
+            'image/jpeg' => 'jpg',
+            'image/pjpeg' => 'jpg',
+            'image/gif' => 'gif',
+            'image/png' => 'png',
+        );
+        $mime = $image_mimes[getFileMime($file)];
+        return (array_search($mime, $extensions) > -1);
+    }
+}
+
+if (!function_exists('getImageWidthAndHeight')) {
+    function getImageWidthAndHeight($path)
+    {
+        $values = getimagesize($path);
+        return array(
+            "width" => $values[0],
+            "height" => $values[1]
+        );
+    }
+}
+
+if (!function_exists('getCaptcha')) {
+    function getCaptcha()
+    {
         require_once($_SERVER['DOCUMENT_ROOT'] . "/vendor/cool-php-captcha-0.3.1/captcha.php");
         $captcha = new SimpleCaptcha();
         $captcha->resourcesPath = $_SERVER['DOCUMENT_ROOT'] . "/vendor/cool-php-captcha-0.3.1/resources";
