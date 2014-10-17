@@ -1,5 +1,15 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
+if(! function_exists('getCaptcha')) {
+    function getCaptcha() {
+        require_once($_SERVER['DOCUMENT_ROOT'] . "/vendor/cool-php-captcha-0.3.1/captcha.php");
+        $captcha = new SimpleCaptcha();
+        $captcha->resourcesPath = $_SERVER['DOCUMENT_ROOT'] . "/vendor/cool-php-captcha-0.3.1/resources";
+        $captcha->wordsFile = null;
+        $captcha->imageFormat = 'png';
+        return $captcha->CreateImage();
+    }
+}
 
 if (!function_exists('hashIdsEncrypt')) {
     function hashIdsEncrypt($items, $min_length = null, $alphabet = null)
