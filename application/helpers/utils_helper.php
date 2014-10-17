@@ -1,5 +1,23 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
+if (!function_exists('get_token')) {
+    function get_token()
+    {
+        return _get_random_string(15);
+    }
+}
+
+if (!function_exists('_get_random_string')) {
+    function _get_random_string($size)
+    {
+        $str = "";
+        for ($x = 1; $x <= $size; $x++) {
+            $str .= chr(rand(65, 90));
+        }
+        return $str;
+    }
+}
+
 
 if (!function_exists('getFileMime')) {
     function getFileMime($file)
