@@ -38,4 +38,26 @@ class MY_Controller extends CI_Controller {
         //Store current request method for later use
         $this->request_method = strtolower($_SERVER['REQUEST_METHOD']);
     }
+
+    protected function getView() {
+
+        $callers=debug_backtrace();
+        $caller = $callers[2]['function'];
+        $site = $this->uri->segment(1);
+        $site = ($site != "super-admin" && $site != "admin") ? "main-site" : $site;
+        return $site . "/" . strtolower(get_called_class()) . "/" . $caller;
+    }
+
+    protected function validateForm() {
+
+        $callers=debug_backtrace();
+        $caller = $callers[1]['function'];
+        $site = $this->uri->segment(1);
+        $site = ($site != "super-admin" && $site != "admin") ? "main-site" : $site;
+        return $this->form_validation->run($site . "-" . strtolower(get_called_class()) . "-" . $caller);
+    }
+
+    protected function loadView($data = null) {
+        $this->load->view($this->getView(), $data);
+    }
 }
