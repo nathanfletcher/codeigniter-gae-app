@@ -21,6 +21,9 @@ body {
 .navbar-bottom {
     margin-bottom: 0;
 }
+.navbar-brand {
+    padding : 0;
+}
 h3 > .badge {
     vertical-align: middle;
 }

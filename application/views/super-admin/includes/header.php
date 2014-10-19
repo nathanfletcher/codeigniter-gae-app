@@ -66,7 +66,10 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="<?php echo base_url(); ?>super-admin">
-                            Super Admin
+                            <img src="/static/images/logos/logo-super-admin.png" height="50" width="150"
+                                 alt="<?php echo $this->config->item('site_name'); ?> | Super Admin"
+                                 title="<?php echo $this->config->item('site_name'); ?> | Super Admin"
+                                />
                         </a>
                     </div>
                     <?php if($is_logged_in) { ?>
