@@ -8,25 +8,8 @@ $this->load->view('super-admin/includes/header', $data);
 ?>
 
     <?php
-    $errors = validation_errors_array();
-    if(count($errors) > 0 || (isset($custom_errors) and count($custom_errors) > 0) ) {
-        ?>
-        <ul class="list-group">
-            <?php foreach($errors as $error) { ?>
-                <li class="list-group-item list-group-item-danger"><?php echo $error; ?></li>
-            <?php } ?>
-
-            <?php
-            if(isset($custom_errors)) {
-                foreach($custom_errors as $error) {
-                    ?>
-                    <li class="list-group-item list-group-item-danger"><?php echo $error; ?></li>
-                <?php
-                }
-            }
-            ?>
-        </ul>
-    <?php } ?>
+        $this->load->view('includes/form-validation');
+    ?>
 
     <div class="container row">
         <div class="container col-lg-4 col-lg-push-4 col-md-6 col-md-push-3 col-sm-8 col-sm-push-2">
