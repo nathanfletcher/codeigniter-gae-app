@@ -57,6 +57,14 @@ class MY_Controller extends CI_Controller {
         return $this->form_validation->run($site . "-" . strtolower(get_called_class()) . "-" . $caller);
     }
 
+    protected function loadSuccessView() {
+        redirect($this->getView() . "_success");
+    }
+
+    protected function loadFailedView() {
+        redirect($this->getView() . "_failed");
+    }
+
     protected function loadView($data = null) {
         $this->load->view($this->getView(), $data);
     }
