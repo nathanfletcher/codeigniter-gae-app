@@ -22,7 +22,7 @@
                         <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
                             <table style="border-collapse: collapse;border-spacing: 0" align="left">
                                 <tbody><tr>
-                                    <td class="logo" style="padding-top: 40px;padding-bottom: 40px;padding-left: 0;padding-right: 0;vertical-align: top;color: #454545;font-size: 24px;font-weight: 700;line-height: 32px;text-align: left;width: 280px;font-family: sans-serif" id="emb-email-header"><a target="_blank" href='<?php echo base_url(); ?>'><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic;display: block;max-width: 211px" src="<?php echo base_url(); ?>static/images/logos/logo.png" alt="" width="219" height="49"></a></td>
+                                    <td class="logo" style="padding-top: 40px;padding-bottom: 40px;padding-left: 0;padding-right: 0;vertical-align: top;color: #454545;font-size: 24px;font-weight: 700;line-height: 32px;text-align: left;width: 280px;font-family: sans-serif" id="emb-email-header"><a target="_blank" href='<?php echo base_url(); ?>'><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic;display: block;max-width: 211px" src="<?php echo base_url(); ?>static/images/logos/logo.png" alt="" width="105" height="50"></a></td>
                                 </tr>
                                 </tbody></table>
                         </td>
