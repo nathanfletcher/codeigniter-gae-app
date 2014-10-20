@@ -4,6 +4,11 @@ codeigniter-gae-app
 CodeIgniter on Google App Engine
 
 
+codeigniter-gae-app Version
+---------------------------
+0.2
+
+
 Demo URLs
 ---------
 
@@ -64,9 +69,10 @@ codeigniter-gae-app Requirements
 2. [PHP 5.4.33](http://php.net/)
 
 
-codeigniter-gae-app Version
----------------------------
-0.2
+Database SQL file
+-----------------
+
+In sql folder
 
 
 Setup Instructions
