@@ -1,5 +1,5 @@
 application: codeigniter-gae-app
-version: 1
+version: 2
 runtime: php
 api_version: 1
 threadsafe: false
