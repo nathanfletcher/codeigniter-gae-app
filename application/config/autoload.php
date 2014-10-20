@@ -80,7 +80,7 @@ $autoload['helper'] = array('url', 'utils');
 |
 */
 
-$autoload['config'] = array('hash-ids', 'site');
+$autoload['config'] = array('hash-ids', 'site', 'emails');
 
 
 /*
