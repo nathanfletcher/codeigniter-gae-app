@@ -1,5 +1,5 @@
 application: codeigniter-gae-app
-version: 1
+version: 2
 runtime: php
 api_version: 1
 threadsafe: false
@@ -12,6 +12,10 @@ handlers:
 - url: /user_guide/(.*)
   static_files: user_guide/\1
   upload: user_guide/(.*)
+
+- url: /static/(.*)
+  static_files: static/\1
+  upload: static/(.*)
 
 - url: /
   script: index.php
