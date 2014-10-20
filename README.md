@@ -100,3 +100,9 @@ Need help in setting up CodeIgniter on Google App Engine?
 ---------------------------------------------------------
 
 Ping me @ [sasidhar@sasidhar.com](mailto:sasidhar@sasidhar.com)
+
+
+Suggestions?
+------------
+
+Please send to [sasidhar@sasidhar.com](sasidhar@sasidhar.com)
