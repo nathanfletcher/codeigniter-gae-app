@@ -179,7 +179,7 @@ class User extends MY_Controller {
             } else if ( $this->request_method == "post" ) {
 
                 //Process Login Form
-                if ( $this->form_validation->run($this->site . '-reset-password') ) {
+                if ( $this->validateForm() ) {
 
                     //Update Password
                     $where = array(
