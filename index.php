@@ -18,7 +18,15 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'development');
+if(isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'], 'Google App Engine') !== false)
+{
+    define('ENVIRONMENT', 'production');
+}
+else
+{
+    define('ENVIRONMENT', 'development');
+}
+
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
