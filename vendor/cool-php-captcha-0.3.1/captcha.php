@@ -11,7 +11,7 @@
  */
 
 
-session_start();
+//session_start();
 
 
 
@@ -41,7 +41,7 @@ if (!empty($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
 
 
 // Image generation
-$captcha->CreateImage();
+//$captcha->CreateImage();
 
 
 
