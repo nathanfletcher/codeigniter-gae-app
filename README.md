@@ -12,11 +12,6 @@ codeigniter-gae-app Version
 Demo URLs
 ---------
 
-**Custom Domain URL**
-
-[ci-on-gae.sasidhar.com](http://ci-on-gae.sasidhar.com/)
-
-
 **Appspot URL**
 
 [codeigniter-gae-app.appspot.com](http://codeigniter-gae-app.appspot.com/)
@@ -24,7 +19,7 @@ Demo URLs
 
 Demo Credentials
 ----------------
-Super Admin Section URL : http://ci-on-gae.sasidhar.com/super-admin
+Super Admin Section URL : http://codeigniter-gae-app.appspot.com/super-admin
 
 
 User1 Username : superadmin1@sasidhar.com
@@ -38,18 +33,6 @@ User2 Password : password
 
 
 **Note** : Play with the above credentials and make sure that they are set back to the above mentioned.
-
-
-Credentials Not Working?
-------------------------
-
-Create an Issue (or) contact @ [sasidhar@sasidhar.com](mailto:sasidhar@sasidhar.com), I will reset/add your credentials in DB.
-
-
-Any other issues?
------------------
-
-Create an Issue (or) contact @ [sasidhar@sasidhar.com](mailto:sasidhar@sasidhar.com), I will try to fix them ASAP.
 
 
 codeigniter-gae-app Contents
@@ -83,26 +66,3 @@ Setup Instructions
 * Clone [codeigniter-gae-app](https://github.com/sasidhar/codeigniter-gae-app) repository to local machine
 * Run `dev_appserver.py . --php_executable_path=~/installations/php-5.4.33/installdir/bin/php-cgi`
 * Open `http://localhost:8080` in browser
-
-
-Future Work
------------
-
-My plan is to add following in the future, when I have some time
-* Admin Section
-* Manage Admins from Super Admins Section
-* Main site
-* Manage Users from both Admins Section and Super Admins Section
-* etc ...
-
-
-Need help in setting up CodeIgniter on Google App Engine?
----------------------------------------------------------
-
-Ping me @ [sasidhar@sasidhar.com](mailto:sasidhar@sasidhar.com)
-
-
-Suggestions?
-------------
-
-Please send to [sasidhar@sasidhar.com](sasidhar@sasidhar.com)
