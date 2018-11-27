@@ -3,18 +3,8 @@ codeigniter-gae-app
 
 CodeIgniter on Google App Engine
 
-
-codeigniter-gae-app Version
----------------------------
-0.2
-
-
-Demo URLs
----------
-
-**Appspot URL**
-
-[codeigniter-gae-app.appspot.com](http://codeigniter-gae-app.appspot.com/)
+Database connection uses PDO driver for Google App Engine standard environment
+Refer to this StackOverflow post for details: https://stackoverflow.com/questions/51407055/unable-to-connect-to-sql-instance-database-on-google-cloud/51421696
 
 
 Demo Credentials
@@ -48,8 +38,8 @@ codeigniter-gae-app Contents
 codeigniter-gae-app Requirements
 --------------------------------
 
-1. [Google App Engine SDK for PHP 1.9.13](https://cloud.google.com/appengine/downloads)
-2. [PHP 5.4.33](http://php.net/)
+1. [Google App Engine SDK](https://cloud.google.com/appengine/downloads)
+2. [PHP 5.5](http://php.net/)
 
 
 Database SQL file
