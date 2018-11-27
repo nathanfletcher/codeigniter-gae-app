@@ -48,11 +48,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = ':/cloudsql/codeigniter-gae-app:ci';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'ci';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['dsn'] = getenv('MYSQL_DSN');
+$db['default']['username'] = getenv('MYSQL_USER');
+$db['default']['password'] = getenv('MYSQL_PASSWORD');
+$db['default']['database'] = getenv('MYSQL_DB');
+$db['default']['dbdriver'] = 'pdo';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = TRUE;
