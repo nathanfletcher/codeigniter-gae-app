@@ -1,8 +1,6 @@
 application: codeigniter-gae-app
-version: 2
-runtime: php
-api_version: 1
-threadsafe: false
+service: default
+runtime: php55
 
 handlers:
 - url: /user_guide/
