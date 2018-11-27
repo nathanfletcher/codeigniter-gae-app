@@ -1,6 +1,12 @@
-application: codeigniter-gae-app
 service: default
 runtime: php55
+
+env_variables:
+  # Put production environment variables here.
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/INSTANCE_CONNECTION_NAME;dbname=DATABASE
+  MYSQL_USER: cloudsql_username
+  MYSQL_PASSWORD: cloudsql_password
+  MYSQL_DB: cloudsql_database_name
 
 handlers:
 - url: /user_guide/
